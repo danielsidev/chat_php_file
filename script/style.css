@@ -1,0 +1,91 @@
+/*******************************************************************
+@A small web application for to demonstrate how to use files in PHP
+@A small application of chat using files txt
+@Developed by Daniel Mello Siqueira: http://danielsiqueira.net
+********************************************************************/
+*{margin:0 auto; padding: 0; overflow: hidden !important;} /*Centralizamos todos elementos da página*/
+body{/*Corpo do site*/
+    background-color: #000;/*Definimos a cor de fundo da página como azul claro*/
+}
+p{/*Todos paragráfos*//*Fonte verdana*/
+    color:#111111;/*Cor cinza escuro*//*Negrito*/
+    letter-spacing:1px;/*Espacamento dos caracteres de 1px*/
+}
+form{ color:#fff;     background-color: #000;/*Cor de funco preta*/}
+#dvCentro{/*Div centro*/
+    width:550px;/*Largura de 550px*/
+    height:auto;/*Altura automática*/
+    background-color:brown;/*Cor de funco marrom*/
+   /* border: 2px solid #ccc;/*Borda de 2px na cor cinza claro*/
+}
+#dvMensagem{/*Div que exibe as mensagens*/
+    width:100%;/*largura de 100% de acordo com a div pai*/
+    height:400px;/*altura de 400px*/
+    background-color: #000;/*Cor de funco preta*/
+    color:#00FF00;
+    padding:3px; /*Espaçamento de 3px*/
+   /* border-bottom: 2px solid #ccc;/*Borda de 2px cinza claro*/
+    overflow-y: auto;/*Barra de rolagem vertical automática*//*Fonte Verdana*/
+}
+
+#txtMensagem{/*Textarea que escreve as mensagens*/
+    width:540px;/*Largura de 540px*/
+    height:100px;/*Altura de 100px*/
+    border:0;/*Sem borda*/
+    padding:5px;/*Espaçamento de 5px*/
+    color:#111111;/*Cor cinza escuro*//*Fonte Courier*/
+    outline-color: #00FF00;/*Cor da borda para vermelho*/
+}
+#btnSubmit{/*Botão que envia o formulário*/
+    background-color: #000;/*Cor de fundo Crimson*//*Fonte Verdana*/
+    padding:5px;/*Espaçamento de 5px*/
+    border:1px solid #333;/* Borda de 1px na cor branca*/
+    margin:5px;/*Margem de 5px*/
+color:#fff;
+}
+#btnSubmit:active{/*Quando clicamos no botão submit*/
+    background-color: lightcoral;/*Altermos a cor de fundo*/
+}
+#btnSubmit:hover{/*Quando pasamos o mouse sobre o botão Submit*/
+    background-color: #00FF00;/*Alteramos a cor de fundo*/
+    box-shadow:0 0 5px #FFFFFF;/*Criamos uma sobra externa na cor branca*/
+}
+#dvLogin{/*Div login*/
+    width:500px;/*Largura de 500px*/
+    /*background-color: beige;/*Alteramos  cor de fundo*/
+    /*border:2px solid #CCCCCC;/*Borda de 2px na cor cinza claro*/
+    margin-top: 100px;/*Criamos uma margem do topo de 100px*/
+    /*padding:5px;/*Espaçamento de 5px*/
+}
+#linkSair{/*Link sair*/
+    color:#FFFFFF;/*Cor do texto branco*//*Fonte em negrito*/
+    letter-spacing: 1px;/*Espaçamento dos caracteres de 1px*/
+    text-decoration: none;/*Removemos o Underline do link*/
+}
+
+.campo{ 
+    border: 0;
+    border-radius: 3px;
+    height: 30px;
+    box-shadow: 0px 0px 10px #fff;
+    width: 200px;
+    outline-color: #00FF00;
+    margin: 5px;
+    padding: 3px;
+    
+}
+
+#frmLogin{  border-radius: 3px; border: 1px solid #333; text-align: center; padding: 15px;}
+#opColor, #opColor option{ background: #fff !important;}
+#btsair{ 
+    background: #FF0000;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #fff;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    padding: 3px 0px 0px 0px;
+    float: right;
+    margin-top: 4px;
+}
