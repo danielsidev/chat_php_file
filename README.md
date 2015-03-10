@@ -1,9 +1,9 @@
 
-#PHP with Txt Files in Chat
+#PHP: Working with files
 A small web application for to demonstrate how to use files in PHP
 
 #Description
-A small application of chat using files txt
+A small application of chat to exemplify the use of txt files
 
 #Reminder:
 Set permission 777 for the folder (mensagens)
