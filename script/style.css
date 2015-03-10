@@ -3,9 +3,10 @@
 @A small application of chat using files txt
 @Developed by Daniel Mello Siqueira: http://danielsiqueira.net
 ********************************************************************/
-*{margin:0 auto; padding: 0; overflow: hidden !important;} /*Centralizamos todos elementos da página*/
+*{margin:0 auto; padding: 0; } /*Centralizamos todos elementos da página*/
 body{/*Corpo do site*/
     background-color: #000;/*Definimos a cor de fundo da página como azul claro*/
+    margin:0 auto; padding: 0;
 }
 p{/*Todos paragráfos*//*Fonte verdana*/
     color:#111111;/*Cor cinza escuro*//*Negrito*/
@@ -19,7 +20,7 @@ form{ color:#fff;     background-color: #000;/*Cor de funco preta*/}
    /* border: 2px solid #ccc;/*Borda de 2px na cor cinza claro*/
 }
 #dvMensagem{/*Div que exibe as mensagens*/
-    width:100%;/*largura de 100% de acordo com a div pai*/
+    width:90%;/*largura de 100% de acordo com a div pai*/
     height:400px;/*altura de 400px*/
     background-color: #000;/*Cor de funco preta*/
     color:#00FF00;
@@ -89,3 +90,5 @@ color:#fff;
     float: right;
     margin-top: 4px;
 }
+
+#frmChat{ width: 90%;}
