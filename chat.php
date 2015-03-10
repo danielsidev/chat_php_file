@@ -29,7 +29,20 @@ if($logar==true){
     $_SESSION["nome"] = $_POST["txtNickName"];
     $_SESSION["senha"] = $senha ;
     $_SESSION["cor"] = $_POST["opColor"];
-    require_once"checa_sessao.php";
+ 
+    $PATH_APP = explode("script", str_replace("\\", "/", dirname(__DIR__)));
+    include "checa_sessao.php";
+    require_once"controller/FileControl.php";    
+    $nameFile = date("Y.m.d");
+    $pathFile = $PATH_APP[0]."/mensagens/".$nameFile.".txt";
+    $mode="write";
+    $content = "<b style='letter-spacing:1px;"
+          ."color:".$_SESSION['cor'].";'>"
+          .$_SESSION['nome'] . ": </b> "
+          ."Entrou no chat...\r\n\n";
+    
+    $file = new FileControl($pathFile, $mode);
+    $file->writeFile($content);
 ?>
 <!DOCTYPE html>
 <html>

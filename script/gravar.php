@@ -4,7 +4,7 @@
 @A small application of chat using files txt
 @Developed by Daniel Mello Siqueira: http://danielsiqueira.net
 ********************************************************************/
-session_start();
+
 $PATH_APP = explode("script", str_replace("\\", "/", dirname(__DIR__)));
 include $PATH_APP[0]."/checa_sessao.php";
 require_once $PATH_APP[0]."/controller/FileControl.php";
